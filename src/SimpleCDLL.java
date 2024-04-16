@@ -142,19 +142,22 @@ public class SimpleCDLL<T> implements SimpleList<T> {
       public int nextIndex() {
         // Check that iterator is valid.
         failFast();
-
-        return this.pos;
+        if (this.pos < SimpleCDLL.this.size) {
+          return this.pos;
+        } else {
+          return SimpleCDLL.this.size;
+        }
       } // nextIndex()
 
       public int previousIndex() {
         // Check that iterator is valid.
         failFast();
         
-        if (!this.hasPrevious()) {
-            throw new NoSuchElementException();
+        if (this.pos > 0) {
+          return this.pos - 1;
         } // if
-
-        return this.pos - 1;
+        
+        return -1;
       } // prevIndex
 
       public T previous() throws NoSuchElementException {
