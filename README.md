@@ -4,7 +4,7 @@ Considering the effects of the circularly-linked variant and fail-fast iterators
 
 
 ## Author
-Keely Myiamoto
+Keely Miyamoto
 
 
 ## Resources
