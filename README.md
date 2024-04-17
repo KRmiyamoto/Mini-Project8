@@ -2,6 +2,8 @@
 Revisiting implementation of doubly-linked lists. 
 Considering the effects of the circularly-linked variant and fail-fast iterators.
 
+Link: https://github.com/KRmiyamoto/Mini-Project8
+
 
 ## Author
 Keely Miyamoto
